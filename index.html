@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="NOVA — moderne kleding voor elke dag."
+  >
+
+  <title>NOVA — Moderne kleding</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    Gratis verzending vanaf €75
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo" aria-label="NOVA homepagina">
+        NOVA<span>.</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categorieën</a>
+        <a href="#about">Over NOVA</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="icon-button search-toggle"
+          type="button"
+          aria-label="Zoeken"
+          title="Zoeken"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="m16 16 5 5"></path>
+          </svg>
+        </button>
+
+        <button
+          class="icon-button cart-toggle"
+          type="button"
+          aria-label="Winkelmand openen"
+          title="Winkelmand"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h2l1.6 9.2a2 2 0 0 0 2 1.7h7.8a2 2 0 0 0 2-1.6L21 8H7"></path>
+            <circle cx="10" cy="20" r="1"></circle>
+            <circle cx="18" cy="20" r="1"></circle>
+          </svg>
+
+          <span class="cart-count">0</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Menu openen"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <div class="container search-inner">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="m16 16 5 5"></path>
+        </svg>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Zoek naar een product..."
+          autocomplete="off"
+          aria-label="Zoek naar een product"
+        >
+
+        <button
+          class="close-search"
+          type="button"
+          aria-label="Zoekbalk sluiten"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">Nieuwe collectie — herfst / winter</p>
+
+        <h1>
+          Kleding die<br>
+          <em>jou</em> beweegt.
+        </h1>
+
+        <p class="hero-text">
+          Tijdloze essentials en uitgesproken items, ontworpen voor jouw dagelijks leven.
+        </p>
+
+        <a href="#shop" class="button button-dark">
+          Bekijk collectie
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85"
+          alt="Nieuwe kledingcollectie"
+        >
+      </div>
+    </section>
+
+    <section class="category-section section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shop op categorie</p>
+            <h2>Vind jouw stijl</h2>
+          </div>
+
+          <a href="#shop" class="text-link">
+            Bekijk alles
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="category-grid">
+          <button
+            class="category-card"
+            type="button"
+            data-category="T-shirts"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+              alt="T-shirts"
+            >
+            <span>T-shirts</span>
+          </button>
+
+          <button
+            class="category-card"
+            type="button"
+            data-category="Broeken"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+              alt="Broeken"
+            >
+            <span>Broeken</span>
+          </button>
+
+          <button
+            class="category-card"
+            type="button"
+            data-category="Hoodies"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+              alt="Hoodies"
+            >
+            <span>Hoodies</span>
+          </button>
+
+          <button
+            class="category-card"
+            type="button"
+            data-category="Jassen"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=700&q=80"
+              alt="Jassen"
+            >
+            <span>Jassen</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section section" id="shop">
+      <div class="container">
+        <div class="section-heading products-heading">
+          <div>
+            <p class="eyebrow">Onze favorieten</p>
+            <h2>Shop de collectie</h2>
+          </div>
+
+          <div class="shop-controls">
+            <div class="filter-buttons">
+              <button
+                class="filter-button active"
+                type="button"
+                data-filter="Alle"
+              >
+                Alles
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="T-shirts"
+              >
+                T-shirts
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="Broeken"
+              >
+                Broeken
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="Hoodies"
+              >
+                Hoodies
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="Jassen"
+              >
+                Jassen
+              </button>
+            </div>
+
+            <select id="sortSelect" aria-label="Producten sorteren">
+              <option value="default">Sorteer op</option>
+              <option value="price-low">Prijs: laag naar hoog</option>
+              <option value="price-high">Prijs: hoog naar laag</option>
+              <option value="name">Naam: A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="empty-products hidden" id="emptyProducts">
+          <div class="empty-icon">⌕</div>
+          <h3>Geen producten gevonden</h3>
+          <p>Probeer een andere zoekterm of categorie.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1000&q=85"
+            alt="NOVA kleding"
+          >
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Het NOVA-gevoel</p>
+
+          <h2>Gemaakt om lang mee te gaan.</h2>
+
+          <p>
+            NOVA maakt moderne kleding met aandacht voor comfort, kwaliteit
+            en een bewuste garderobe. Ontdek items die je elke dag opnieuw
+            wilt dragen.
+          </p>
+
+          <a href="#shop" class="button button-outline">
+            Ontdek NOVA
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container newsletter-content">
+        <div>
+          <p class="eyebrow">Blijf op de hoogte</p>
+          <h2>10% korting op je eerste bestelling.</h2>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <input
+            type="email"
+            name="newsletterEmail"
+            placeholder="Jouw e-mailadres"
+            aria-label="Jouw e-mailadres"
+            required
+          >
+
+          <button class="button button-light" type="submit">
+            Aanmelden
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo logo-light">
+          NOVA<span>.</span>
+        </a>
+
+        <p>Moderne kleding voor elke dag.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">Alle producten</a>
+        <a href="#categories">Categorieën</a>
+        <a href="#shop">Nieuwe collectie</a>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <a href="#">Verzending &amp; retouren</a>
+        <a href="#">Veelgestelde vragen</a>
+        <a href="#">Neem contact op</a>
+      </div>
+
+      <div>
+        <h4>Volg ons</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2024 NOVA. Alle rechten voorbehouden.</span>
+      <span>Met aandacht gemaakt.</span>
+    </div>
+  </footer>
+
+  <!-- Productdetails -->
+  <div
+    class="modal-overlay"
+    id="productModal"
+    aria-hidden="true"
+  >
+    <div
+      class="product-modal modal-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalProductName"
+    >
+      <button
+        class="modal-close"
+        type="button"
+        data-close-modal
+        aria-label="Venster sluiten"
+      >
+        &times;
+      </button>
+
+      <div class="modal-product-image">
+        <img id="modalProductImage" src="" alt="">
+      </div>
+
+      <div class="modal-product-info">
+        <p class="eyebrow" id="modalProductCategory"></p>
+
+        <h2 id="modalProductName"></h2>
+
+        <p class="modal-price" id="modalProductPrice"></p>
+
+        <p id="modalProductDescription"></p>
+
+        <div class="size-selector">
+          <div class="selector-label">
+            <span>Kies je maat</span>
+            <span class="size-guide">Maattabel</span>
+          </div>
+
+          <div class="sizes">
+            <button type="button" data-size="XS">XS</button>
+            <button type="button" data-size="S">S</button>
+            <button type="button" data-size="M" class="selected">M</button>
+            <button type="button" data-size="L">L</button>
+            <button type="button" data-size="XL">XL</button>
+          </div>
+        </div>
+
+        <button
+          class="button button-dark full-width"
+          type="button"
+          id="modalAddButton"
+        >
+          In winkelmand
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Winkelmand -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Winkelmand"
+  >
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Jouw selectie</p>
+        <h2>Winkelmand</h2>
+      </div>
+
+      <button
+        class="modal-close"
+        type="button"
+        id="closeCart"
+        aria-label="Winkelmand sluiten"
+      >
+        &times;
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <div class="empty-icon">🛍</div>
+
+      <h3>Je winkelmand is leeg</h3>
+
+      <p>Voeg iets moois toe aan je collectie.</p>
+
+      <a href="#shop" class="button button-outline close-cart-link">
+        Bekijk producten
+      </a>
+    </div>
+
+    <div class="cart-summary" id="cartSummary">
+      <div class="summary-line">
+        <span>Subtotaal</span>
+        <strong id="cartSubtotal">€0,00</strong>
+      </div>
+
+      <div class="summary-line">
+        <span>Verzending</span>
+        <span id="cartShipping">€4,95</span>
+      </div>
+
+      <div class="summary-line total-line">
+        <span>Totaal</span>
+        <strong id="cartTotal">€0,00</strong>
+      </div>
+
+      <button
+        class="button button-dark full-width"
+        type="button"
+        id="checkoutButton"
+      >
+        Naar checkout
+        <span>→</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Checkout -->
+  <div
+    class="modal-overlay"
+    id="checkoutModal"
+    aria-hidden="true"
+  >
+    <div
+      class="checkout-modal modal-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="checkoutTitle"
+    >
+      <button
+        class="modal-close"
+        type="button"
+        data-close-checkout
+        aria-label="Checkout sluiten"
+      >
+        &times;
+      </button>
+
+      <div class="checkout-header">
+        <p class="eyebrow">Bijna klaar</p>
+
+        <h2 id="checkoutTitle">Bestelling plaatsen</h2>
+
+        <p>
+          Vul je gegevens in om je bestelling af te ronden.
+        </p>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-row">
+          <label>
+            Voornaam
+            <input
+              type="text"
+              name="firstName"
+              autocomplete="given-name"
+              required
+            >
+          </label>
+
+          <label>
+            Achternaam
+            <input
+              type="text"
+              name="lastName"
+              autocomplete="family-name"
+              required
+            >
+          </label>
+        </div>
+
+        <label>
+          E-mailadres
+          <input
+            type="email"
+            name="email"
+            autocomplete="email"
+            required
+          >
+        </label>
+
+        <label>
+          Adres
+          <input
+            type="text"
+            name="address"
+            autocomplete="street-address"
+            required
+          >
+        </label>
+
+        <div class="form-row">
+          <label>
+            Postcode
+            <input
+              type="text"
+              name="postalCode"
+              autocomplete="postal-code"
+              required
+            >
+          </label>
+
+          <label>
+            Plaats
+            <input
+              type="text"
+              name="city"
+              autocomplete="address-level2"
+              required
+            >
+          </label>
+        </div>
+
+        <div class="checkout-total">
+          <span>Te betalen</span>
+          <strong id="checkoutTotal">€0,00</strong>
+        </div>
+
+        <button class="button button-dark full-width" type="submit">
+          Bestelling bevestigen
+          <span>→</span>
+        </button>
+
+        <small class="checkout-note">
+          Demo-webshop: er wordt geen echte betaling uitgevoerd.
+        </small>
+      </form>
+    </div>
+  </div>
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+</body>
+</html>
